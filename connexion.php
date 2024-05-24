@@ -14,13 +14,13 @@ $db = new PDO(
     $password
 );
 
-$query = $db->prepare('SELECT * FROM users WHERE id = :id');
-$parameters = [
-    'id' => 1
-];
-$query->execute($parameters);
-$movie = $query->fetch(PDO::FETCH_ASSOC);
+// $query = $db->prepare('SELECT * FROM users WHERE id = :id');
+// $parameters = [
+//     'id' => 1
+// ];
+// $query->execute($parameters);
+// $movie = $query->fetch(PDO::FETCH_ASSOC);
 
-var_dump($movie)
+// var_dump($movie)
 
 ?>
